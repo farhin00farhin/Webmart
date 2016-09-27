@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="clearfix"></div>
+
+<!-- contact page content start -->
+<section id="contact-information">
+    <section class="container no-padding contact">
+        <div class="row top-gap">
+            <div class="col-lg-6 col-lg-offset-1 col-sm-7 col-xs-12">
+
+                <div class="wow shake contact-map" data-wow-delay="1.5s" data-wow-duration="5s" data-wow-iteration="1">
+                    <div id="my-map-display">
+                        @*<iframe src="http://mapbuildr.com/frame/4kspog" frameborder="0" height="400" width="550"></iframe>*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-sm-offset-1 col-xs-12 mail wow fadeInRight" data-wow-delay="1s">
+                <h1 class="contactHeading ">Find Us Today!</h1>
+                <ul>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone<span>+64 0123456790</span></li>
+                    <li>
+                        <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email
+                        <span><a href="mailto:info@example.com">lorem@ipsum.com</a></span>
+                    </li>
+                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address<span>Davies Avenue, Manukau, Auckland, New Zealand</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container contact wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
+        <!--contact form-->
+        <div id="envelope">
+            <h1 class="contactHeading">Send a message</h1>
+            <div id='form_envelope'>
+                <form id="contact-info">
+                    <p>Hello Webmart,</p>
+                    <label for="message">Your Message :<span class="error-message" id="error-message-message">Please enter a message first</span> </label>
+                    <textarea name="message" value="Your Message" id="message"></textarea>
+                    <p>Thanks,</p>
+                    <label for="name">Name:<span class="error-message" id="error-message-name">Please enter your name first</span> </label>
+                    <input type="text" name="name" value="" id="name" />
+                    <label for="email">Email: <span class="error-message" id="error-message-email">Please enter a valid email address first</span></label>
+                    <input type="text" name="email" value="" id="email" />
+                    <input id="btnSubmit" type="submit" name="submit" value="Send!"/><i id ="check" class="fa fa-check" aria-hidden="true"></i>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</section>
+<!-- contact page content end -->

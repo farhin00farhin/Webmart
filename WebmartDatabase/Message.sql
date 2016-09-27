@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Message]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)

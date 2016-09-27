@@ -1,0 +1,65 @@
+﻿.slider-wrapper, .banner {
+    height: 320px;
+}
+
+.sample-container {
+    margin-top: 320px;
+}
+
+.price {
+    margin-top: 30px;
+}
+
+.team-members{
+  margin:120px 0 180px 0;
+}
+
+@media (max-width: 991px) {
+    .slider-wrapper, .banner {
+        height: 265px;
+    }
+
+    /*.banner {
+        height: 550px;
+    }*/
+
+    .sample-container, #contact-information {
+        margin-top: 265px;
+    }
+
+    .price{
+        margin-top:80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-wrapper, .banner {
+        height: 250px;
+    }
+
+    .sample-container, #contact-information {
+        margin-top: 250px;
+    }
+
+    .price{
+        margin:100px 0 0 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .slider-wrapper, .banner {
+        height: 160px;
+    }
+
+    .sample-container, #contact-information {
+        margin-top: 160px;
+    }
+    .price{
+        margin-top:60px;
+    }
+
+    .logo a {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,115 @@
+<!-- The demo page for the gallery thumbnails. Will be displayed in an iframe inside the home page -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--stylesheets-->
+    <!--free hover effect library-->
+    <link href="Content/ihover.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/thumbs.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <!--js-->
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!--fonts-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <section id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-pause="hover">
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item ">
+                <div class="container slide1">
+                    <div class="row top-gap-large">
+                     
+                        <div class="col-sm-4 col-xs-12">
+                            <div id="square-thumb">
+                                <div class="ih-item square colored effect3 bottom_to_top">
+                                    <a href="#">
+                                        <div class="img"><img src="images/thumbs/sun.jpg" alt="Beautiful sunset over the water."></div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 center-alignment">
+                            <div id="circle-thumb">
+                                <div class="ih-item circle effect2 top_to_bottom">
+                                    <a href="#">
+                                        <div class="img"><img src="images/thumbs/flower.jpg" alt="Bloomed pink flower"></div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div id="square2-thumb">
+                                <div class="ih-item square effect13 left_to_right">
+                                    <a href="#">
+                                        <div class="img"><img src="images/thumbs/rain.jpg" alt="Rain falling over a dandellion"></div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+                </div>
+            </div>
+            <div class="item active">
+                <div class="container slide2">
+                    <div class="row top-gap-large">
+                        <div class="col-sm-6 col-xs-12">
+
+                            <div id="dark-thumb">    
+                                <div class="view effect">
+                                    <img class="img-responsive" src="images/thumbs/comp.jpg"  alt="A laptop with code displayed"/>
+                                    <div class="mask">
+                                        <a class="info" title="Full Image"></a>
+                                    </div>
+                                </div>                         
+                            </div>
+                          
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+
+                            <div id="triangle-thumbs">
+                                <div class="tri-wrapper">
+                                    <a class="link"></a>
+                                    <div class="overlay">
+                                        <div class="arrow-left"></div>
+                                        <div class="rectangle"></div>
+                                    </div>
+
+                                    <div class="description">
+                                        <h3>Project</h3>
+                                        <p>Add any description here</p>
+                                    </div>
+                                    <img class="img-responsive" src="images/thumbs/tree.jpg" alt="Tall hanging trees">
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+                       
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

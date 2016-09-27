@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+<!-- This layout is used only for the home page -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Webmart</title>
+    <!-- for-mobile-apps -->
+    @Html.Partial("_MetaTagsPartial")
+
+    <!-- StyleSheets-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/csshake.min.css" rel="stylesheet" />
+    <!-- js -->
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant|Domine" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    @Html.Partial("_HeaderLarge")
+    @RenderBody()
+
+    <!-- footer -->
+    @Html.Partial("_FooterPartial")
+
+    <!-- scripts -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/wow.min.js"></script>
+
+    <!-- initialize wow.js -->
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script src="~/Scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="clearfix"></div>
+
+<!-- pricing page start -->
+<div class="container sample-container">
+    <div class="row price-drop">
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".5s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".25s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".1s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".5s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".1s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".25s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".5s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".5s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".5s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".1s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".5s">$</div>
+        <div class="col-xs-1 dollar wow bounceOutDown" data-wow-duration="1s" data-wow-delay=".25s">$</div>
+    </div>
+</div>
+<section class="container price sample-container">
+	<div class="row">
+		@*wow fadeInLeft*@
+		<div class="wow fadeIn promo col-xs-12 col-sm-4" data-wow-delay=".5">
+			<h4>Basic</h4>
+			<ul class="features">
+				<li class="brief">Basic package</li>
+				<li class="price"><sup>$</sup>300<sub>/page</sub></li>
+				<li class="offers">Basic HTML and CSS, fully responsive</li>
+				<li class="offers">Simple slideshows, galleries, nav-bars</li>
+				<li class="offers">Limited animation effects</li>
+                <li class="offers">Beautiful charts and tables </li>
+				<li class="buy"><a onclick="openNav()">Sign up</a></li>
+			</ul>
+		</div>
+		@*wow fadeIn*@
+		<div class="wow fadeIn promo col-xs-12 col-sm-4" data-wow-delay="1s">
+			<h4>Startup</h4>
+			<ul class="features">
+				<li class="brief">Value package</li>
+				<li class="price"><sup>$</sup>500<sub>/page</sub></li>
+				<li class="offers">Advanced HTML,CSS, fully responsive</li>
+				<li class="offers">Eye-catching galleries and slideshows</li>
+				<li class="offers">10 different moden nav-bar styles</li>
+				<li class="offers">Unlimited fonts and advanced animations</li>
+				<li class="buy"><a onclick="openNav()">Sign up</a></li>
+			</ul>
+		</div>
+		@* wow fadeInRight *@
+		<div class="wow fadeIn promo col-xs-12 col-sm-4" data-wow-delay=".5">
+			<h4>Premium</h4>
+			<ul class="features">
+				<li class="brief">Exceptional features</li>
+				<li class="price"><sup>$</sup>800<sub>/page</sub></li>
+				<li class="offers">All the features of basic and startup packages</li>
+				<li class="offers">Customized tooltips and 3d reveal animation</li>
+                <li class="offers">24 hour online support</li>
+				<li class="offers">Unique and custom web elements</li>
+				<li class="buy"><a onclick="openNav()">Sign up</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 additional">
+			<h3 class="wow fadeInDown" data-wow-offset="200">All plans include professional guidance through hosting and domain name purchase.</h3>
+			<br />
+			<br />
+			<h3 class="survey-link wow fadeInDown" data-wow-offset="200" data-wow-delay=".5s">If you want to find out which package best suits you, please take this <a href="@Url.Action("Survey", "Site")">Survey</a> before signing up.</h3>
+		</div>
+	</div>
+
+</section>
+
+<!-- The overlay -->
+<div id="pricing-overlay" class="overlay">
+
+    <!-- Overlay content -->
+    <div id="signup">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <form action="#" method="post" name="sign up">
+
+            <h1>Sign Up</h1>
+
+            <div class="signup-info">
+                <p>
+                    Please enter your email address to sign up. We will get in
+                    touch with you as soon possible. We will send you more
+                    information about our package and how to complete the payment.
+                    We can also negotiate our prices for very small HTML pages.
+                    You can also set up meeting with us via email. Thank you
+                </p>
+            </div>
+            <p id="error-message-email">Please enter a valid email address</p>
+            <div class="input">
+
+                <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+                <input type="submit" class="button" id="btn-signup-submit" value="SIGN UP">
+                <i id="check" class="fa fa-check" aria-hidden="true" style="display: none;"></i>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="pricing-overlay-back" class="overlay-back" onclick="closeNav()">
+    <!--  empty background to allow clicking so that the actual overlay can close -->
+</div>
+<!-- pricing page end -->

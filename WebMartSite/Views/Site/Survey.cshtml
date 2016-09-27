@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="clearfix"></div>
+
+<!-- survey content start -->
+<section class="container sample-container">
+    <div id="previousAnswers">
+    </div>
+    <div id="survey-options">
+        <a  id="questionA" class="survey-option survey-option--takiri" href="#">My own use <span>Where do you want to be?</span></a>
+        @*<div class="checkbox visible" id="questionA">
+            <label>
+                <input type="checkbox"> For my own use
+            </label>
+        </div>*@
+        <div class="checkbox" id="questionC" data-after="questionA" >
+            <label>
+                <input type="checkbox"> The website is for my hobby
+            </label>
+        </div>
+        <div class="checkbox"  id="questionD"  data-after="questionA">
+            <label>
+                <input type="checkbox"> The website is for my cv/portfolio
+            </label>
+        </div>
+        <div class="checkbox"  id="questionE" data-after="questionA">
+            <label>
+                <input type="checkbox"> The website is to advertise your work
+            </label>
+        </div>
+        <div class="checkbox" id="questionH" data-after="questionC,questionE,questionD">
+            <label>
+                <input type="checkbox"> I want a simple website
+            </label>
+        </div>
+        <div class="checkbox"  id="questionI" data-after="questionC,questionE,questionD">
+            <label>
+                <input type="checkbox"> I want a complex website
+            </label>
+        </div>
+
+
+
+        <div class="checkbox visible" id="questionB">
+            <label>
+                <input type="checkbox"> For my Business
+            </label>
+        </div>
+        <div class="checkbox" id="questionF"  data-after="questionB">
+            <label>
+                <input type="checkbox">  I have a small business
+            </label>
+        </div>
+        <div class="checkbox" id="questionG" data-after="questionB">
+            <label>
+                <input type="checkbox"> I have a large company with many products/services
+            </label>
+        </div>
+        <div class="checkbox" id="questionJ" data-after="questionG,questionF">
+            <label>
+                <input type="checkbox"> I want a minimal, elegant website that shows off all my products
+            </label>
+        </div>
+        <div class="checkbox" id="questionK" data-after="questionG,questionF">
+            <label>
+                <input type="checkbox"> I want a website with complex features that bring to my products to life?
+            </label>
+        </div>
+    </div>
+
+</section>
+<!-- survey content wnd -->
