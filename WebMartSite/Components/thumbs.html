@@ -1,0 +1,117 @@
+﻿<!-- The demo page for the gallery thumbnails. Will be displayed in an iframe inside the home page -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--seo tags-->
+    <title>Thumbnail Examples | Webmart </title>
+    <meta name="description" content="Various thumbnails that could be included in websites. There are more navs that we can customise to meet your every need.">
+    <meta charset="utf-8" />
+
+    <!--stylesheets-->
+    <link href="../Content/ihover.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/thumbs.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+    <!--js-->
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <!--20160907 SA bootstrap carousel which pauses on hover-->
+    <section id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
+        <div class="carousel-inner" role="listbox">
+            <!--20160907 SA active slide-->
+            <div class="item active">
+                <div class="container slide1">
+                    <div class="row top-gap-large">
+                        <!--20160907 html structure follows structure that best suits iHover css styles-->
+                        <div class="col-sm-4 col-xs-12">
+                            <div id="square-thumb">
+                                <figure class="ih-item square colored effect3 bottom_to_top">
+                                    <a href="#">
+                                        <div class="img"><img src="../images/thumbs/sun.jpg" alt="Beautiful sunset over the water."></div>
+                                        <figcaption class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 center-alignment">
+                            <div id="circle-thumb">
+                                <figure class="ih-item circle effect2 top_to_bottom">
+                                    <a href="#">
+                                        <div class="img"><img src="../images/thumbs/flower.jpg" alt="Bloomed pink flower"></div>
+                                        <figcaption class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div id="square2-thumb">
+                                <figure class="ih-item square effect13 left_to_right">
+                                    <a href="#">
+                                        <div class="img"><img src="../images/thumbs/rain.jpg" alt="Rain falling over a dandellion"></div>
+                                        <figcaption class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--20160907 SA inactive slide-->
+            <div class="item">
+                <div class="container slide2">
+                    <div class="row top-gap-large">
+                        <div class="col-sm-6 col-xs-12">
+                            <div id="dark-thumb">
+                                <figure class="view effect">
+                                    <img class="img-responsive" src="../images/thumbs/comp.jpg" alt="A laptop with code displayed" />
+                                    <figcaption class="mask">
+                                        <a class="info" title="Full Image"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+
+                            <div id="triangle-thumbs">
+                                <figure class="tri-wrapper">
+                                    <a class="link"></a>
+                                    <div class="overlay">
+                                        <div class="arrow-left"></div>
+                                        <div class="rectangle"></div>
+                                    </div>
+                                    <figcaption class="description">
+                                        <h3>Project</h3>
+                                        <p>Add any description here</p>
+                                    </figcaption>
+                                    <img class="img-responsive" src="../images/thumbs/tree.jpg" alt="Tall hanging trees">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+
+        //20160907 SA instantiating carousel
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+ 
+</body>
+</html>

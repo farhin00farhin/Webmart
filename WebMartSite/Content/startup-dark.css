@@ -1,0 +1,29 @@
+﻿.color {
+    background: #27262b;
+}
+
+.fa.fa-heart {
+    color: #3e3e3e;
+}
+
+.banner {
+    background: linear-gradient( rgba(123, 83, 97, 0.18), rgb(0, 0, 0) ), url(../Images/survey/startup1.jpg);
+    background-size: cover;
+}
+
+.hvr-bounce-to-left {
+    background: rgb(33, 30, 31);
+    border: 1px solid #30281c;
+}
+
+.content-shade {
+    background: rgba(0, 0, 0, 0.64);
+}
+
+.hvr-bounce-to-left:before {
+    background: #797979;
+}
+
+.more {
+    background: linear-gradient( rgb(59, 41, 47), rgb(0, 0, 0) );
+}

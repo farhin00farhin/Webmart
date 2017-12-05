@@ -1,0 +1,151 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	@Html.Partial("_MetaTagsPartial")
+	<!--stylesheets-->
+	<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/Content/spectrum.css" rel="stylesheet" />
+	<link href="~/Content/hover-min.css" rel="stylesheet" media="all">
+	<link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+	<link href="~/Content/jquery.contextMenu.min.css" rel="stylesheet" />
+	<link href="~/Content/CYO.css" rel="stylesheet" />
+
+	<!--js-->
+    <script src="~/Scripts/jquery.min.js"></script>
+	<script src="~/Scripts/spectrum.js"></script>
+	<script src="~/Scripts/jquery-ui.min.js"></script>
+	<script src="~/Scripts/jquery.contextMenu.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="InitThis();">
+    <!--20161006 SA CYO page navbar-->
+	<nav class="navbar navbar-inverse CYO">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="@Url.Action("Index", "Site")" class="navbar-brand">Webmart</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+				<i class="navbar-text navbar-right fa fa-inverse fa-question-circle" data-toggle="tooltip" data-placement="left" title="With our CYO page you can create your own website designs using shapes and elements given.
+                   This will help us understand what sort of layout or design you are after.
+                    If want to only give us a quick sketch of what you want, then you can also draw on a blank canvas that we have provided. Click on elements to add to the deisgn area and start creating now!
+                    Right click and select remove to remove an item"></i>
+				<p class="navbar-text navbar-right">Try our CYO(Create Your Own) feature</p>
+			</div>
+		</div>
+	</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-9">
+            <!--20161006 SA area where tools can be placed-->
+			<div class="design-area"></div>
+            <!--20161006 SA canvas for drawing free hand-->
+			<div class="canvas-container">
+				<canvas id="myCanvas" height="2000" width="2000"></canvas>
+			</div>
+		</div>
+		<div class="col-sm-3">
+            <!--20161006 SA canvas tools-->
+			<i id="close-canvas" class="fa fa-3x fa-close" data-toggle="tooltip" data-placement="left" title="Close | Close the canvas and return to design view"></i>
+			<i id="edit-canvas" class="fa fa-2x fa-eraser" data-toggle="tooltip" data-placement="left" title="Draw/Erase | Toggle between drawing and erase modes"></i>
+			<i id="clear-canvas" class="fa fa-3x fa-bolt" data-toggle="tooltip" data-placement="left" title="Clear | Clear the canvas and start again."></i>
+            <!--20161006 SA different tools for creating customized webpage-->
+            <div class="tools">
+				<div data-toggle="tooltip" data-placement="left" title="Color | Choose any color. To add color to elements, select it and then pick a color and click the choose button.">
+					<input type='text' id="custom" />
+				</div>
+				<div class="text-tool">
+					<div class="row">
+						<div class="col-xs-12 col-lg-4" data-toggle="tooltip" data-placement="left" title="Heading | Click to add to your website design.">
+                            <h1 class="hvr-grow-shadow tool tool-text"><i class="fa fa-arrows"></i><span>Title</span></h1>
+						</div>
+						<div class="col-xs-12 col-lg-4" data-toggle="tooltip" data-placement="left" title="Sub-heading | Click to add to your website design.">
+							<h3 class="hvr-grow-shadow tool tool-text"><i class="fa fa-arrows"></i><span>Sub-title</span></h3>
+						</div>
+						<div class="col-xs-12 col-lg-4" data-toggle="tooltip" data-placement="left" title="Simple text | Click to add to your website design.">
+							<p class="hvr-grow-shadow tool tool-text"><i class="fa fa-arrows"></i><span>Paragraph</span></p>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="shape-tools">
+					<div class="row">
+						<h3 data-toggle="tooltip" data-placement="left" title="Add different shapes to create nav-bars, layouts or custom buttons. You can add text on top of shapes.">Shapes</h3>
+
+						<div class="col-xs-6 col-lg-3">
+							<div class="rectangle-tool hvr-pulse-shrink tool" data-toggle="tooltip" data-placement="left" title="Rectangle"></div>
+						</div>
+						<div class="col-xs-6 col-lg-3">
+							<div class="circle-tool hvr-pulse-shrink tool" data-toggle="tooltip" data-placement="left" title="Circle"></div>
+						</div>
+						<div class="col-xs-6 col-lg-3">
+							<div class="parallelogram-tool hvr-pulse-shrink tool" data-toggle="tooltip" data-placement="left" title="Parallelogram"></div>
+						</div>
+						<div class="col-xs-6 col-lg-3" data-toggle=" tooltip" data-placement="left" title="Rounded-rectangle">
+							<div class="rounded-rectangle-tool hvr-pulse-shrink tool"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-lg-10" data-toggle="tooltip" data-placement="left" title="Line-horizontal">
+							<div class="line-tool-h hvr-pulse-shrink tool"></div>
+						</div>
+
+						<div class="col-xs-6 col-lg-2" data-toggle="tooltip" data-placement="left" title="Line-vertical">
+							<div class="line-tool-v hvr-pulse-shrink tool"></div>
+						</div>
+					</div>
+				</div>
+				<hr />
+
+				<div class="placeholder-tools">
+					<div class="row">
+						<div class="col-xs-12 col-lg-7">
+							<h3>Placeholders</h3>
+							<div class="col-sm-7" data-toggle="tooltip" data-placement="left" title="Placeholder image">
+								<div class="image-tool tool"><img class="hvr-grow-shadow" src="https://static.pexels.com/photos/1522/path-grass-lawn-meadow-large.jpg" alt="a path with grass in a lawn and a meadow" /></div>
+							</div>
+							<div class="col-sm-5" data-toggle="tooltip" data-placement="left" title="Placeholder icon">
+								<div class="icon-tool tool"><img class="hvr-grow-shadow" src="../Images/feature/startup/13.png" alt="lifesaver icon" /></div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-lg-3" data-toggle="tooltip" data-placement="top" title="Click here to draw any layout. You will be given a pen tool for free-hand drawing.">
+							<div class="blank-tool">
+								<h3>Blank</h3>
+								<div class="blank-link">
+									<a class="hvr-curl-top-left">Draw</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr />
+                <!--20161006 SA allowing user to send their created design-->
+				<div class="send-design">
+					<div class="row">
+						<form class="design">
+							<div class="error-message" id="error-message-email">Please enter a valid email address first</div>
+							<label id="email-label" for="email">Email:</label>
+							<input type="text" name="email" value="" id="email"/>
+							<input id="submit-button" type="submit" name="submit" value="Send!"/><i id="check" class="fa fa-check" aria-hidden="true"></i>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <!--20161006 SA Disabling CYO when on mobile-->
+	<div class="overlay visible-xs-block">
+		<div class="overlay-text">We're sorry but this feature is not supported on small screens. We can take your design and create responsive design from it if you want. Please revisit on a larger screen.</div>
+	</div>
+    <!--20161006 SA script-->
+	<script src="~/Scripts/CYO.js"></script>
+</body>
+</html>

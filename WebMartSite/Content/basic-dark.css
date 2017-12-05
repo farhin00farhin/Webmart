@@ -1,0 +1,15 @@
+﻿body {
+    background-color: #251b18;
+}
+
+.wave {
+    background-color: #2d2d2d;
+}
+
+ .wave::before {
+        background-image: radial-gradient(circle at 10px -5px, transparent 12px, #251b18 13px);
+    }
+
+.jumbotron p {
+    color: grey;
+}

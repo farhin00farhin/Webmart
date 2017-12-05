@@ -1,0 +1,268 @@
+﻿    <!--20161005 SA basic-tour overlay-->
+<div id="basic-tour-overlay" class="tour-overlay">
+    <!--20161005 SA close button-->
+    <i class="fa fa-arrow-left fa-inverse close-parent"></i>
+    <!--20161005 SA sidebar that navigates to different sections of the tour-->
+    <div class="options-sidebar">
+        <div class="options-wrapper">
+            <ul class="tour-options">
+                <li data-related-item="basic-elements" class="hvr-wobble-bottom hvr-sweep-to-bottom">
+                    <a>Elements</a>
+                </li>
+                <li data-related-item="basic-sliders" class="hvr-wobble-bottom hvr-sweep-to-bottom">
+                    <a>Sliders</a>
+                </li>
+                <li data-related-item="basic-gallery" class="hvr-wobble-bottom hvr-sweep-to-bottom">
+                    <a>Gallery</a>
+                </li>
+                <li data-related-item="basic-more" class="hvr-wobble-bottom hvr-sweep-to-bottom">
+                    <a>More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--20161005 SA container that holds all tour sections and elements-->
+    <div class="presentation-container">
+        <!--20161005 SA section ids indicate which section is for what-->
+        <section id="basic-elements" class="presentation" data-bg-color="#D6B946">
+            <div class="basic-elements-sidebar">
+                <p>
+                    Everything you can ask for in a simple yet beautiful and functional website. We can give it to you with our basic package.
+                </p>
+            </div>
+            <div class="basic-elements-content">
+                <!--20161005 SA different words that appear and disappear one after the other to indicate what elements are provided by the package-->
+                <div class="basic-cycle element-container">
+                    <h3>
+                        <span class="basic-cycle-text">navs</span>
+                        <span class="basic-cycle-text">maps</span>
+                        <span class="basic-cycle-text">forms</span>
+                        <span class="basic-cycle-text">buttons</span>
+                        <span class="basic-cycle-text">buttons!!</span>
+                        <span class="basic-cycle-text">and more buttons!!!</span>
+                    </h3>
+                </div>
+                <!--20161005 SA images of web elements with hover effects-->
+                <div class="nav element-container wow fadeInLeft" data-wow-delay="1s">
+                    <img src="~/Images/feature/basic/nav-image.png" alt="A nav bar" />
+                </div>
+                <div class="map element-container wow fadeInUp" data-wow-delay="2s">
+                    <img src="~/Images/feature/basic/map-image.png" alt="A google map" />
+                </div>
+                <div class="form element-container wow fadeInDown" data-wow-delay="3s">
+                    <img src="~/Images/feature/basic/form-image.png" alt="A form" />
+                </div>
+                <div class="button1 element-container wow bounceIn" data-wow-delay="4s">
+                    <img src="~/Images/feature/basic/button1-image.png" alt="A button" />
+                </div>
+                <div class="button2 element-container wow bounceIn" data-wow-delay="5s">
+                    <img src="~/Images/feature/basic/button2-image.png" alt="A button" />
+                </div>
+                <div class="button3 element-container wow bounceIn" data-wow-delay="6s">
+                    <img src="~/Images/feature/basic/button3-image.png" alt="A button" />
+                </div>
+            </div>
+        </section>
+        <section id="basic-sliders" class="presentation active" data-bg-color="#4CD6BC">
+            <div class="wobble-slideshow wow fadeInUp" data-wow-delay="1s">
+                <div class="wobble-container">
+                    <div id="slideshow" class="slideshow">
+                        <ul>
+                            <li>
+                                <div class="slide">
+                                    <img class="icon" src="~/Images/feature/basic/cart.png" alt="Browser Icon" />
+                                    <h1 style="visibility:visible" class="wow pulse" data-wow-delay="0.5s" data-wow-iteration="3">This a basic slideshow effect that we offer for our basic package</h1>
+                                    <p>This slideshow has an wobble effect</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide">
+                                    <img class="icon" src="~/Images/feature/basic/laptop.png" alt="Heart Icon" />
+                                    <h1 style="visibility:visible" class="wow pulse" data-wow-delay="0.5s" data-wow-iteration="3">You can add your images here</h1>
+                                    <p>And any text you want!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slide">
+                                    <img class="icon" src="~/Images/feature/basic/joystick.png" alt="Letter Icon" />
+                                    <h1 style="visibility:visible" class="wow pulse" data-wow-delay="0.5s" data-wow-iteration="3">This is only an example. We have plenty of other styles for slideshows</h1>
+                                    <p>Enjoy!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="basic-gallery" class="presentation" data-bg-color="rgb(126, 18, 61)">
+            <!--20161005 SA different gallery styles wrapped with many wrappers to make them center vertically. Also for gallery items different html structure has been used for easily adapting to css libraries-->
+            <div class="basic-gallery-wrapper">
+                <div class="outer-wrap">
+                    <div class="container-fluid vertical-align">
+                        <div class="row">
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay=".5s">
+                                <div class="ih-item square colored effect4">
+                                    <a href="#">
+                                        <div class="img">
+                                            <img class=".img-responsive" src="~/Images/feature/basic/g.jpg" alt="purple flowers">
+                                        </div>
+                                        <div class="mask1"></div>
+                                        <div class="mask2"></div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Add any description under any heading. Add your own images to make your gallery look beautiful and personalized.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay="1s">
+                                <div class="ih-item square effect9 right_to_left">
+                                    <a href="#">
+                                        <div class="img">
+                                            <img class=".img-responsive" src="~/Images/feature/basic/g1.jpg" alt="coffee beans spilled from a cup">
+                                        </div>
+                                        <div class="info">
+                                            <div class="info-back">
+                                                <h3>Heading here</h3>
+                                                <p>We can add different hover effects from a collection of effects to your thumbnails, icons and buttons.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay="1.5s">
+                                <div class="ih-item square colored effect10 bottom_to_top">
+                                    <a href="#">
+                                        <div class="img">
+                                            <img class=".img-responsive" src="~/Images/feature/basic/g2.jpg" alt="couple hugging with flower in hand">
+                                        </div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay="2s">
+                                <div class="ih-item square effect15 bottom_to_top">
+                                    <a href="#">
+                                        <div class="img">
+                                            <img class=".img-responsive" src="~/Images/feature/basic/g3.jpg" alt="breakfast waffles, berries and coffee">
+                                        </div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInLeftBig" data-wow-delay="2s">
+                                <figure class="imghvr-flip-diag-2">
+                                    <img class=".img-responsive" src="~/Images/feature/basic/g3.jpg" alt="breakfast waffles, berries and coffee">
+                                    <figcaption>
+                                        <h3>Hello World</h3>
+                                        <p>We've added such texts so that you can get an idea of what it would look like if you wanted text here.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInLeftBig" data-wow-delay="6.5s">
+                                <figure class="imghvr-blur">
+                                    <img class=".img-responsive" src="~/Images/feature/basic/g.jpg" alt="purple flowers">
+                                    <figcaption>
+                                        <h3>Hello World</h3>
+                                        <p>We have added lorem ipsum dummy text in some of the description just as examples.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInLeftBig" data-wow-delay="6.8s">
+                                <div class="flip-thumb">
+                                    <figure>
+                                        <img class=".img-responsive" src="~/Images/feature/basic/g1.jpg" alt="coffee beans spilled from a cup" />
+                                        <figcaption>
+                                            <h2>This is a cool title!</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInLeftBig" data-wow-delay="7.2s">
+                                <figure class="imghvr-fold-up">
+                                    <img class=".img-responsive" src="~/Images/feature/basic/g2.jpg" alt="couple hugging with flower in hand">
+                                    <figcaption>
+                                        <h3>Hello World</h3>
+                                        <p>Life is too important to be taken seriously!</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay="7.2s">
+                                <div class="grid">
+                                    <figure class="effect-dexter">
+                                        <img src="~/Images/feature/basic/g.jpg" alt="purple flowers">
+                                        <figcaption>
+                                            <h2><span>A&nbsp;HEADING</span></h2>
+                                            <p>We try to bring you the latest elements out here!</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay="7.4s">
+                                <div class="cool-hovereffect">
+                                    <img class="img-responsive" src="~/Images/feature/basic/g1.jpg" alt="coffee beans spilled from a cup">
+                                    <div class="cool-hovereffect-overlay">
+                                        <h2>Add/Modify</h2>
+                                        <p>
+                                            <a href="#">YOUR CUSTOMIZED TEXT</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay="7.6s">
+                                <div class="grid">
+                                    <figure class="effect-apollo">
+                                        <img src="~/Images/feature/basic/g2.jpg" alt="couple hugging with flower in hand">
+                                        <figcaption>
+                                            <h2>YOUR <br /><span>HEADING</span></h2>
+                                            <p>Enjoying our gallery so far? We have more designs. Let us know what you think.</p>
+                                        </figcaption>
+                                    </figure>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-3 basic-gallery-item no-padding wow fadeInRightBig" data-wow-delay="7.8s">
+                                <div class="grid">
+                                    <figure class="effect-oscar">
+                                        <img src="~/Images/feature/basic/g3.jpg" alt="breakfast waffles, berries and coffee">
+                                        <figcaption>
+                                            <h2>Last<span>EXAMPLE</span></h2>
+                                            <p>This is the last gallery item example. Hope you enjoyed our collection. </p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h1>Enjoy hundreds of innovative and</h1>
+                            <h1> interactive gallery thumbnail designs!<span>|</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--20161005 SA section leads to CYO(Create your own) page-->
+        <section id="basic-more" class="more presentation" data-bg-color="#EFF0F1">
+            <div class="container">
+                <div class="wow zoomIn" data-wow-delay=".5s">
+                    <h1>Like what we do with websites but would love to come up with your own design?</h1>
+                    <h1>Try our <a href="@Url.Action("CYO", "Site")">CYO page</a> to create layouts and add web elements. </h1>
+                    <h1>Then send us the design and we can discuss later which package it might fall under and create the website exactly how you wanted.</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+

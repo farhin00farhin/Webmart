@@ -1,29 +1,32 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <div class="clearfix"></div>
-
 <!--about page content start -->
 <section class="team-overall">
     <div class="container">
-
         <h2 class="wow fadeInDown" data-wow-delay=".25s">
             We care about our customers' preferences and promise to deliver good customer service and quality products. We love innovation and creating beautiful websites.
         </h2>
-
-        <div class="row team-overall-grids">
+        <!--20160926 SA section explaining what webmart does and what it's about-->
+        <section class="row team-overall-grids">
             <div class="col-md-6 team-overall-grid-left wow fadeInLeft" data-wow-delay=".5s">
-                <figure class="effect-lexi">
-                    <img src="images/team.jpg" alt="" class="img-responsive">
+                <figure class="effect-team">
+                    <img src="~/Images/about/team.jpg" alt="rocks with hands drawn" class="img-responsive">
                     <figcaption>
                         <h3>Webmart <span>Team</span></h3>
                         <p>Each and every wish of a customer is important to us. <span>We care</span> </p>
                     </figcaption>
                 </figure>
             </div>
+            <!--20160926 SA cycling header text for webmart writing-->
             <div class="col-md-6 team-overall-grid-right wow fadeInRight" data-wow-delay=".5s">
-                <h3>Better ways to create <span>websites</span></h3>
+                <h3>Better ways to create 
+                    <span class="cycle-text">websites</span>
+                    <span class="cycle-text">pages</span>
+                    <span class="cycle-text">blogs</span>
+                    <span class="cycle-text">showcases</span>
+                </h3>
                 <p>
                     Webmart has been the choice for thousands of
                     loyal customers over the years. We’re an efficient
@@ -37,18 +40,20 @@
                 </p>
             </div>
             <div class="clearfix"> </div>
-        </div>
-        <div class="row">
+        </section>
+        <section class="row">
             <div class="col-xs-12 top-gap">
+                <!--20160926 SA videa about webmart included with html5 video tag-->
                 <div class="embed-responsive embed-responsive-16by9 wow flipInY" data-wow-delay=".5s" data-wow-duration="2s">
-                    <video class="embed-responsive-item" controls="controls" poster="~/Images/vid.png">
+                    <video class="embed-responsive-item" controls="controls" poster="~/Images/about/vid.png">
                         <source src='@Url.Action("MyVideo")' type="video/mp4" />
                     </video>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </section>
+<!--team member grids start -->
 <section class="container-fluid team-members">
     <div class="team">
         <div class="container">
@@ -59,10 +64,11 @@
             <div class="team-grids">
                 <div class="col-md-3 team-grid wow fadeInDown" data-wow-offset="400" data-wow-delay=".25s">
                     <figure class="thumb">
-                        <img src="images/4.jpg" alt="team-member -Andrew Anderson" class="img-responsive">
+                        <img src="Images/about/4.jpg" alt="team-member -Andrew Anderson" class="img-responsive">
                         <figcaption class="caption">
                             <h3><a href="team.html">Rick Anderson</a></h3>
                             <span>CEO</span>
+                            <!--20160926 SA social media links for seperate team member-->
                             <div class="social-icon">
                                 <ul>
                                     <li><a href="#" class="icon-button team-twitter"><i class="icon-twitter"></i><span></span></a></li>
@@ -75,11 +81,12 @@
                 </div>
                 <div class="col-md-3 team-grid wow fadeInUp" data-wow-offset="400" data-wow-delay=".25s">
                     <figure class="thumb">
-                        <img src="images/3.jpg" alt="team member- Adam Smith" class="img-responsive">
+                        <img src="Images/about/3.jpg" alt="team member- Adam Smith" class="img-responsive">
                         <figcaption class="caption">
                             <h3><a href="team.html">Adam Smith</a></h3>
                             <span>Designer</span>
-                            <div class="footer-bottom-right social-icon">
+                            <!--20160926 SA social media links for seperate team member-->
+                            <div class="social-icon">
                                 <ul>
                                     <li><a href="#" class="icon-button team-twitter"><i class="icon-twitter"></i><span></span></a></li>
                                     <li><a href="#" class="icon-button team-google"><i class="icon-google"></i><span></span></a></li>
@@ -91,11 +98,12 @@
                 </div>
                 <div class="col-md-3 team-grid wow fadeInDown" data-wow-offset="400" data-wow-delay=".25s">
                     <figure class="thumb">
-                        <img src="images/5.jpg" alt="team member - Christ Richard" class="img-responsive">
+                        <img src="Images/about/5.jpg" alt="team member - Chris Richard" class="img-responsive">
                         <figcaption class="caption">
-                            <h3><a href="team.html">Christ Richard</a></h3>
+                            <h3><a href="team.html">Chris Richard</a></h3>
                             <span>Developer</span>
-                            <div class="footer-bottom-right social-icon">
+                            <!--20160926 SA social media links for seperate team member-->
+                            <div class="social-icon">
                                 <ul>
                                     <li><a href="#" class="icon-button team-twitter"><i class="icon-twitter"></i><span></span></a></li>
                                     <li><a href="#" class="icon-button team-google"><i class="icon-google"></i><span></span></a></li>
@@ -107,11 +115,12 @@
                 </div>
                 <div class="col-md-3 team-grid wow fadeInUp" data-wow-offset="400" data-wow-delay=".25s">
                     <figure class="thumb">
-                        <img src="images/6.jpg" alt="team member - Rita Singh" class="img-responsive">
+                        <img src="Images/about/6.jpg" alt="team member - Rita Singh" class="img-responsive">
                         <figcaption class="caption">
                             <h3><a href="team.html">Rinita Singh</a></h3>
                             <span>Developer</span>
-                            <div class="footer-bottom-right social-icon">
+                            <!--20160926 SA social media links for seperate team member-->
+                            <div class="social-icon">
                                 <ul>
                                     <li><a href="#" class="icon-button team-twitter"><i class="icon-twitter"></i><span></span></a></li>
                                     <li><a href="#" class="icon-button team-google"><i class="icon-google"></i><span></span></a></li>

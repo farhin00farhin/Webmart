@@ -1,8 +1,28 @@
-﻿.slider-wrapper, .banner {
+﻿
+/*The MIT License (MIT)
+Copyright (c) 2016 Sadia Afrin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+
+
+/* 20161017 SA stopping the a outline from appearing when user focuses */
+a:focus {
+    outline: 0; 
+}
+
+.slider-wrapper {
     height: 320px;
 }
 
-.sample-container {
+.banner {
+    height: auto;
+}
+
+.content-wrap {
     margin-top: 320px;
 }
 
@@ -12,18 +32,15 @@
 
 .team-members{
   margin:120px 0 180px 0;
+  overflow:hidden;
 }
 
 @media (max-width: 991px) {
-    .slider-wrapper, .banner {
+    .slider-wrapper {
         height: 265px;
     }
 
-    /*.banner {
-        height: 550px;
-    }*/
-
-    .sample-container, #contact-information {
+    .content-wrap, #contact-information {
         margin-top: 265px;
     }
 
@@ -33,28 +50,30 @@
 }
 
 @media (max-width: 767px) {
-    .slider-wrapper, .banner {
+    .slider-wrapper {
         height: 250px;
     }
 
-    .sample-container, #contact-information {
+
+    .content-wrap, #contact-information {
         margin-top: 250px;
     }
 
-    .price{
-        margin:100px 0 0 0;
-    }
 }
 
 
 @media (max-width: 480px) {
-    .slider-wrapper, .banner {
+    .slider-wrapper {
         height: 160px;
     }
 
-    .sample-container, #contact-information {
-        margin-top: 160px;
+ .content-wrap, #contact-information {
+       margin-top: 160px;
     }
+    .contact {
+    margin-top: 30px;
+}
+
     .price{
         margin-top:60px;
     }

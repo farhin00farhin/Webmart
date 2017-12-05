@@ -2,13 +2,45 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@Html.Partial("_BasicTourPartial");
+@Html.Partial("_StartupTourPartial");
+@Html.Partial("_PremiumTourPartial");
 
 <div class="clearfix"></div>
 
 <!--features page content start -->
-
-<section class="container-fluid sample-container">
-    Add stuff here
+<section class="container-fluid content-wrap">
+    <div class="container">
+        <!--20161001 SA clipped shapes that lead to different tours-->
+        <div class="row tour-selection">
+            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-3 shape-mask-container">
+                <div class="wow zoomInLeft" data-wow-delay=".25s" data-wow-duration="1s">
+                    <div class="leaf-shaped-element shape-mask" >
+                        <div data-open-overlay="basic-tour-overlay" class="shape-overlay">
+                            <p>Do you want a simple, neat website that will blow your mind away? Click here to take a tour and see what you can get.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-3 shape-mask-container">
+                <div class="wow fadeIn" data-wow-delay="1.25s" data-wow-duration="2s">
+                    <div class="bird-shaped-element shape-mask">
+                        <div data-open-overlay="startup-tour-overlay" class="shape-overlay">
+                            <p>Are you tired of looking at generic websites and looking for something newer and better? Click here to take a tour and see what you can get.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-xs-8 col-xs-offset-3 shape-mask-container">
+                <div class="wow zoomInRight" data-wow-delay=".25s" data-wow-duration="1s">
+                    <div class="eye-shaped-element shape-mask">
+                        <div data-open-overlay="premium-tour-overlay" class="shape-overlay">
+                            <p>Are you in love with interactive websites and want viewers to get hooked immidiately? Click here to take a tour and see what you can get.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <!--features page content end -->

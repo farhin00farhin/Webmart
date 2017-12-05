@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--seo tags-->
+    <title>Startup Examples | Webmart </title>
+    <meta name="description" content="Example of a website with a slightly complex layout and moderately complex elements that fit in perfetly together. Let us make your website for you exactly how you want it.">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Web Development, Website design, Web programming, HTML, CSS, SEO marketing" />
+
+    <!--stylesheets-->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/hover-min.css" rel="stylesheet" media="all">
+    <link href="../Content/startup.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />
+
+    <!--20160930 SA different style sheets for themes-->
+    <link id="dark" href="../Content/startup-dark.css" rel="stylesheet" class="themes" disabled />
+    <link id="light" href="../Content/startup-light.css" rel="stylesheet" class="themes" disabled />
+    <link id="autumn" href="../Content/startup-autumn.css" rel="stylesheet" class="themes" disabled />
+    <!--js-->
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</head>
+<!--20160929 SA scrollbar class added to make custom scrollbar for overlay-->
+<body class="scrollbar" id="style-1">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 color">
+                <div class="shade">
+                </div>
+                <div class="jumbotron">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </div>
+
+            </div>
+            <div class="col-sm-8 no-padding">
+                <div class="row">
+                    <div class="col-sm-12 banner">
+                        <div class="jumbotron">
+                            <h1>Your Website</h1>
+                            <p>Add any text you want</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 no-padding">
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">Your brand</a>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a href="#">Gallery<span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#">Feature</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><!--.navbar-collapse -->
+                            </div><!--.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!--20160907 SA 2 sections devided in various rows and columns to create boxes for content-->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 no-padding">
+                <img class="img-responsive" src="../Images/survey/s1.jpg" alt="survery image" />
+                <button class="hvr-bounce-to-left">Read more..</button>
+            </div>
+            <div class="col-sm-6 no-padding">
+                <div>
+                    <div class="content-shade">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="jumbotron mid">
+                                    <h1>Your content gallery</h1>
+                                    <p>
+                                        EXCLUSIVE
+                                        LOREM IPSUM IS SIMPLY DUMMY TEXT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <img class="img-responsive" src="../Images/survey/s3.jpg" alt="survey image" />
+                </div>
+
+            </div>
+            <div class="col-sm-3 no-padding">
+                <img class="img-responsive" src="../Images/survey/s2.jpeg" alt="survey image" />
+                <button class="hvr-bounce-to-left">Press me</button>
+            </div>
+        </div>
+    </section>
+    <section class="row more">
+        <div class="col-sm-12">
+        </div>
+    </section>
+
+    <!--script-->
+    <!--20160929 SA method to change theme which is called from common scripts-->
+    <script>
+        $(document).ready(function () {
+            var links = document.getElementsByTagName('link');
+            for (var i = 0; i < links.length; i++) {
+                var a = links[i];
+                if (a.rel.indexOf('style') != -1 && a.id) {
+                    a.disabled = true;
+
+                }
+            }
+        });
+
+        function switchStyle(sty) {
+            var links = document.getElementsByTagName('link');
+            for (var i = 0; i < links.length; i++) {
+                var a = links[i];
+                if (a.rel.indexOf('style') != -1 && a.id) {
+                    a.disabled = true;
+                    if (a.id == sty) {
+                        a.disabled = false;
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

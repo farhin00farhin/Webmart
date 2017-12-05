@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,50 +90,212 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="buttons.html" />
+    <Content Include="App_Data\WebmartDatabase.mdf" />
+    <Content Include="App_Data\WebmartDatabase_log.ldf">
+      <DependentUpon>WebmartDatabase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Components\basic.html" />
+    <Content Include="Components\buttons.html" />
+    <Content Include="Components\grid\css\component.css" />
+    <Content Include="Components\grid\css\grid-autumn.css" />
+    <Content Include="Components\grid\css\grid-dark.css" />
+    <Content Include="Components\grid\css\grid-light.css" />
+    <Content Include="Components\grid\css\grid.css" />
+    <Content Include="Components\grid\css\normalize.css" />
+    <Content Include="Components\grid\fonts\codropsicons4\codropsicons.eot" />
+    <Content Include="Components\grid\fonts\codropsicons4\codropsicons.svg" />
+    <Content Include="Components\grid\fonts\codropsicons4\codropsicons.ttf" />
+    <Content Include="Components\grid\fonts\codropsicons4\codropsicons.woff" />
+    <Content Include="Components\grid\fonts\codropsicons4\license.txt" />
+    <Content Include="Components\grid\grid.html" />
+    <Content Include="Components\grid\img\1.jpg" />
+    <Content Include="Components\grid\img\1_1.jpg" />
+    <Content Include="Components\grid\img\1_2.jpg" />
+    <Content Include="Components\grid\img\1_3.jpg" />
+    <Content Include="Components\grid\img\2.jpg" />
+    <Content Include="Components\grid\img\2_1.jpg" />
+    <Content Include="Components\grid\img\2_2.jpg" />
+    <Content Include="Components\grid\img\3.jpg" />
+    <Content Include="Components\grid\img\3_1.jpg" />
+    <Content Include="Components\grid\img\3_2.jpg" />
+    <Content Include="Components\grid\img\4.jpg" />
+    <Content Include="Components\grid\img\4_1.jpg" />
+    <Content Include="Components\grid\img\4_2.jpg" />
+    <Content Include="Components\grid\img\canvas.png" />
+    <Content Include="Components\grid\img\menu_icon.svg" />
+    <Content Include="Components\grid\img\PageCloud_logo.svg" />
+    <Content Include="Components\grid\img\wireframe.png" />
+    <Content Include="Components\grid\js\animOnScroll.js" />
+    <Content Include="Components\grid\js\classie.js" />
+    <Content Include="Components\grid\js\dynamics.min.js" />
+    <Content Include="Components\grid\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Components\grid\js\main.js" />
+    <Content Include="Components\grid\js\masonry.pkgd.min.js" />
+    <Content Include="Components\grid\js\modernizr.custom.js" />
+    <Content Include="Components\navs.html" />
+    <Content Include="Components\startup.html" />
+    <Content Include="Components\thumbs.html" />
     <Content Include="Content\animate.min.css" />
+    <Content Include="Content\basic-autumn.css" />
+    <Content Include="Content\basic-dark.css" />
+    <Content Include="Content\basic-light.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\tour.css" />
+    <Content Include="Content\basic.css" />
+    <Content Include="Content\bootstrap-slider.min.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\buttons.css" />
     <Content Include="Content\csshake.min.css" />
+    <Content Include="Content\CYO.css" />
+    <Content Include="Content\hover-min.css" />
     <Content Include="Content\ihover.min.css" />
-    <Content Include="Content\mediaelementplayer.min.css" />
+    <Content Include="Content\imagehover.min.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery.contextMenu.min.css" />
+    <Content Include="Content\modern-set1.css" />
+    <Content Include="Content\modern-set2.css" />
     <Content Include="Content\navs.css" />
+    <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\slicebox.css" />
+    <Content Include="Content\slideshow.css" />
+    <Content Include="Content\spectrum.css" />
+    <Content Include="Content\startup-autumn.css" />
+    <Content Include="Content\startup-dark.css" />
+    <Content Include="Content\startup-light.css" />
+    <Content Include="Content\startup.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\thumbs.css" />
+    <Content Include="Content\tooltipster.bundle.min.css" />
     <Content Include="Content\w3.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\1.jpg" />
-    <Content Include="Images\1.png" />
-    <Content Include="Images\10.jpg" />
-    <Content Include="Images\2.jpg" />
-    <Content Include="Images\2.png" />
-    <Content Include="Images\3.jpg" />
-    <Content Include="Images\3.png" />
-    <Content Include="Images\4.jpg" />
-    <Content Include="Images\4.png" />
-    <Content Include="Images\5.jpg" />
-    <Content Include="Images\5.png" />
-    <Content Include="Images\6.jpg" />
-    <Content Include="Images\6.png" />
-    <Content Include="Images\7.jpg" />
-    <Content Include="Images\8.jpg" />
-    <Content Include="Images\9.jpg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="App_Data\WebmartDatabase.accdb" />
+    <Content Include="Images\about\3.jpg" />
+    <Content Include="Images\about\4.jpg" />
+    <Content Include="Images\about\5.jpg" />
+    <Content Include="Images\about\6.jpg" />
+    <Content Include="Images\about\social.png" />
+    <Content Include="Images\about\team.jpg" />
+    <Content Include="Images\about\vid.png" />
     <Content Include="Images\appeal-tex.png" />
     <Content Include="Images\banner-original.jpg" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner2-original.jpg" />
     <Content Include="Images\banner2.jpg" />
+    <Content Include="Images\bin.svg" />
     <Content Include="Images\button-tex.png" />
-    <Content Include="Images\e.jpg" />
+    <Content Include="Images\contact\after.png" />
+    <Content Include="Images\contact\before.png" />
+    <Content Include="Images\contact\bg_out.png" />
+    <Content Include="Images\contact\contact.png" />
+    <Content Include="Images\contact\letter_bg.png" />
+    <Content Include="Images\diag.png" />
+    <Content Include="Images\feature\Assignment2-final.pdf" />
+    <Content Include="Images\feature\basic\button1-image.png" />
+    <Content Include="Images\feature\basic\button2-image.png" />
+    <Content Include="Images\feature\basic\button3-image.png" />
+    <Content Include="Images\feature\basic\cart.png" />
+    <Content Include="Images\feature\basic\form-image.png" />
+    <Content Include="Images\feature\basic\g.jpg" />
+    <Content Include="Images\feature\basic\g1.jpg" />
+    <Content Include="Images\feature\basic\g2.jpg" />
+    <Content Include="Images\feature\basic\g3.jpg" />
+    <Content Include="Images\feature\basic\joystick.png" />
+    <Content Include="Images\feature\basic\laptop.png" />
+    <Content Include="Images\feature\basic\map-image.png" />
+    <Content Include="Images\feature\basic\nav-image.png" />
+    <Content Include="Images\feature\bg-bird.jpg" />
+    <Content Include="Images\feature\bg-eye.jpg" />
+    <Content Include="Images\feature\bg-leaf.jpg" />
+    <Content Include="Images\feature\bird-m.png" />
+    <Content Include="Images\feature\bird-s.png" />
+    <Content Include="Images\feature\bird.png" />
+    <Content Include="Images\feature\eye-m.png" />
+    <Content Include="Images\feature\eye-s.png" />
+    <Content Include="Images\feature\eye.png" />
+    <Content Include="Images\feature\leaf-m.png" />
+    <Content Include="Images\feature\leaf-s.png" />
+    <Content Include="Images\feature\leaf.png" />
+    <Content Include="Images\feature\premium\bunny.jpeg" />
+    <Content Include="Images\feature\premium\cat.jpeg" />
+    <Content Include="Images\feature\premium\water.jpeg" />
+    <Content Include="Images\feature\startup\1.png" />
+    <Content Include="Images\feature\startup\10.png" />
+    <Content Include="Images\feature\startup\11.png" />
+    <Content Include="Images\feature\startup\12.png" />
+    <Content Include="Images\feature\startup\13.png" />
+    <Content Include="Images\feature\startup\14.png" />
+    <Content Include="Images\feature\startup\15.png" />
+    <Content Include="Images\feature\startup\16.png" />
+    <Content Include="Images\feature\startup\2.png" />
+    <Content Include="Images\feature\startup\3.png" />
+    <Content Include="Images\feature\startup\4.png" />
+    <Content Include="Images\feature\startup\5.png" />
+    <Content Include="Images\feature\startup\6.png" />
+    <Content Include="Images\feature\startup\7.png" />
+    <Content Include="Images\feature\startup\8.png" />
+    <Content Include="Images\feature\startup\9.png" />
+    <Content Include="Images\feature\startup\calculator.png" />
+    <Content Include="Images\feature\startup\calendar.png" />
+    <Content Include="Images\feature\startup\chart.png" />
+    <Content Include="Images\feature\startup\clock.png" />
+    <Content Include="Images\feature\startup\cloud.png" />
+    <Content Include="Images\feature\startup\contacts.png" />
+    <Content Include="Images\feature\startup\credit.png" />
+    <Content Include="Images\feature\startup\document.png" />
+    <Content Include="Images\feature\startup\email.png" />
+    <Content Include="Images\feature\startup\eye.png" />
+    <Content Include="Images\feature\startup\f1.PNG" />
+    <Content Include="Images\feature\startup\f10.PNG" />
+    <Content Include="Images\feature\startup\f11.PNG" />
+    <Content Include="Images\feature\startup\f12.PNG" />
+    <Content Include="Images\feature\startup\f2.PNG" />
+    <Content Include="Images\feature\startup\f3.PNG" />
+    <Content Include="Images\feature\startup\f4.PNG" />
+    <Content Include="Images\feature\startup\f5.PNG" />
+    <Content Include="Images\feature\startup\f6.PNG" />
+    <Content Include="Images\feature\startup\f7.PNG" />
+    <Content Include="Images\feature\startup\f8.PNG" />
+    <Content Include="Images\feature\startup\f9.PNG" />
+    <Content Include="Images\feature\startup\g.jpeg" />
+    <Content Include="Images\feature\startup\g2.jpeg" />
+    <Content Include="Images\feature\startup\g3.jpeg" />
+    <Content Include="Images\feature\startup\g4.jpeg" />
+    <Content Include="Images\feature\startup\g5.jpeg" />
+    <Content Include="Images\feature\startup\heart.png" />
+    <Content Include="Images\feature\startup\home.png" />
+    <Content Include="Images\feature\startup\message.png" />
+    <Content Include="Images\feature\startup\nav.png" />
+    <Content Include="Images\feature\startup\off.png" />
+    <Content Include="Images\feature\startup\pen.png" />
+    <Content Include="Images\feature\startup\phone.png" />
+    <Content Include="Images\feature\startup\picture.png" />
+    <Content Include="Images\feature\startup\pin.png" />
+    <Content Include="Images\feature\startup\play.png" />
+    <Content Include="Images\feature\startup\printer.png" />
+    <Content Include="Images\feature\startup\settings.png" />
+    <Content Include="Images\feature\startup\skull.png" />
+    <Content Include="Images\feature\startup\switcher.png" />
+    <Content Include="Images\feature\startup\tag.png" />
+    <Content Include="Images\feature\vid.png" />
     <Content Include="Images\footer-tex.png" />
     <Content Include="Images\footer.png" />
-    <Content Include="Images\img-sp.png" />
     <Content Include="Images\nav-tex.png" />
-    <Content Include="Images\vid.png" />
     <Content Include="Images\shad2.png" />
-    <Content Include="Images\team.jpg" />
+    <Content Include="Images\survey\b1.png" />
+    <Content Include="Images\survey\b2.png" />
+    <Content Include="Images\survey\b3.png" />
+    <Content Include="Images\survey\b4.png" />
+    <Content Include="Images\survey\basic1.jpg" />
+    <Content Include="Images\survey\s1.jpg" />
+    <Content Include="Images\survey\s2.jpeg" />
+    <Content Include="Images\survey\s3.jpg" />
+    <Content Include="Images\survey\startup1.jpg" />
     <Content Include="Images\thumbs\comp.jpg" />
     <Content Include="Images\thumbs\flower.jpg" />
     <Content Include="Images\thumbs\rain.jpg" />
@@ -140,45 +303,56 @@
     <Content Include="Images\thumbs\tree.jpg" />
     <Content Include="Images\triangles.png" />
     <Content Include="Images\wine-cork.png" />
-    <Content Include="navs.html" />
+    <Content Include="Scripts\bootstrap-slider.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\bootstrap.minback.js" />
-    <Content Include="Images\banner.psd" />
-    <Content Include="Images\banner2.psd" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="App_Data\WebmartDatabase.accdb" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\common-scripts.js" />
-    <Content Include="Scripts\fixDisplayIssues.js" />
+    <Content Include="Scripts\CYO.js" />
+    <Content Include="Scripts\jGravity-min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.contextMenu.min.js" />
+    <Content Include="Scripts\jquery.hoverdir.js" />
     <Content Include="Scripts\jquery.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.ripples.js" />
+    <Content Include="Scripts\jquery.slicebox.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\mapScript.js" />
-    <Content Include="Scripts\mediaelement-and-player.min.js" />
+    <Content Include="Scripts\map-custom.js" />
+    <Content Include="Scripts\masonry.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\survey.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\script.js" />
+    <Content Include="Scripts\sliderFx.js" />
+    <Content Include="Scripts\snap.svg-min.js" />
+    <Content Include="Scripts\spectrum.js" />
+    <Content Include="Scripts\watercanvas.js" />
     <Content Include="Scripts\wow.min.js" />
-    <None Include="Scripts\_references.js" />
-    <Content Include="thumbs.html" />
     <Content Include="Videos\webmart.mp4" />
+    <Content Include="Views\Shared\_BasicTourPartial.cshtml" />
+    <Content Include="Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_HeaderLarge.cshtml" />
+    <Content Include="Views\Shared\_HomeLayout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_MetaTagsPartial.cshtml" />
+    <Content Include="Views\Shared\_PremiumTourPartial.cshtml" />
+    <Content Include="Views\Shared\_StartupTourPartial.cshtml" />
+    <Content Include="Views\Site\About.cshtml" />
+    <Content Include="Views\Site\Contact.cshtml" />
+    <Content Include="Views\Site\Features.cshtml" />
+    <Content Include="Views\Site\Index.cshtml" />
+    <Content Include="Views\Site\Pricing.cshtml" />
+    <Content Include="Views\Site\Survey.cshtml" />
+    <Content Include="Views\web.config" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -189,29 +363,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Site\Index.cshtml" />
-    <Content Include="Views\Shared\_HomeLayout.cshtml" />
-    <Content Include="Views\Shared\_FooterPartial.cshtml" />
-    <Content Include="Views\Shared\_HeaderLarge.cshtml" />
-    <Content Include="Views\Shared\_MetaTagsPartial.cshtml" />
-    <Content Include="Views\Site\About.cshtml" />
-    <Content Include="Views\Site\Contact.cshtml" />
-    <Content Include="Views\Site\Features.cshtml" />
-    <Content Include="Views\Site\Pricing.cshtml" />
-    <Content Include="Views\Site\Survey.cshtml" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Images\.picasa.ini" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Site\CYO.cshtml" />
+    <Content Include="Views\Site\ViewDesign.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="sitemap.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -223,7 +390,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>40378</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

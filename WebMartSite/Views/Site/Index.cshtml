@@ -1,39 +1,37 @@
 ﻿@{
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
-
-    <div class="clearfix"></div>
-
-    <!--showcase start -->
-    <section class="container-fluid sample-container">
-        <div class="row">
-            <div class="col-xs-12 col-lg-4 no-padding fixed-height-ifrmae-wrapper wow fadeInLeft" data-wow-offset="300">
-
-                <iframe frameborder="0" class="buttons-section" src="/buttons.html"></iframe>
-            </div>
-
-
-            <div class="col-xs-12 col-lg-8 no-padding fixed-height-ifrmae-wrapper expand-height-thumbs-mob wow fadeInRight" data-wow-offset="300">
-
-                <iframe frameborder="0" class="thumbs-section expand-height-thumbs-mob" src="/thumbs.html"></iframe>
+<div class="clearfix"></div>
+<!--showcase start -->
+<section class="container-fluid content-wrap">
+    <div class="row">
+        <div class="col-xs-12 wow fadeInDown" id="intro-head" data-wow-offset="200">
+            <h1 >Check out Webmart's wonderfully designed example elements</h1>
+        </div>
+    </div>
+    <!--20160924 SA iframes for example buttons,navs and thumbs-->
+    <div class="row">
+        <div class="col-xs-12 col-lg-4 no-padding fixed-height-ifrmae-wrapper wow fadeInLeft" data-wow-offset="300">
+            <iframe frameborder="0" class="buttons-section" src="~/Components/buttons.html"></iframe>
+        </div>
+        <div class="col-xs-12 col-lg-8 no-padding fixed-height-ifrmae-wrapper expand-height-thumbs-mob wow fadeInRight" data-wow-offset="300">
+            <iframe frameborder="0" class="thumbs-section expand-height-thumbs-mob" src="~/Components/thumbs.html"></iframe>
+        </div>
+    </div>
+    <div class="row fixed-height-wrapper">
+        <div class="col-xs-12 no-padding wow fadeInDown" data-wow-offset="300">
+            <iframe frameborder="0" class="navs-section" src="~/Components/navs.html"></iframe>
+        </div>
+    </div>
+    <!--20160924 SA writing to explain that webmart customizes and builds websites.-->
+    <div class="row appeal wow fadeInDown" data-wow-offset="300">
+        <div class="col-sm-12">
+            <div class="call-to-action">
+                <p class="wow fadeInDown" data-wow-delay="2s" data-wow-offset="300"> Like what we can do?</p>
+                <p class="wow fadeInDown" data-wow-delay="2.2s" data-wow-offset="300"> Customize <em>YOUR</em> website, <em>YOUR</em> way</p>
+                <p class="wow fadeInDown" data-wow-delay="2.5s" data-wow-offset="300"> With <em>US</em></p>
             </div>
         </div>
-        <div class="row fixed-height-wrapper">
-            <div class="col-xs-12 no-padding wow fadeInUp" data-wow-offset="300">
-                <iframe frameborder="0" class="navs-section" src="/navs.html"></iframe>
-
-            </div>
-        </div>
-        <div class="row appeal wow fadeInDown" data-wow-offset="300">
-
-            <div class="col-sm-12">
-                <div class="call-to-action">
-                    <p class="wow fadeInDown" data-wow-delay="2s" data-wow-offset="300"> Like what we can do?</p>
-                    <p class="wow fadeInDown" data-wow-delay="2.2s" data-wow-offset="300"> Customize <em>YOUR</em> website, <em>YOUR</em> way</p>
-                    <p class="wow fadeInDown" data-wow-delay="2.5s" data-wow-offset="300"> With <em>US</em></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--showcase end -->
-
+    </div>
+</section>
+<!--showcase end -->

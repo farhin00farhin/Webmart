@@ -6,70 +6,140 @@
 <div class="clearfix"></div>
 
 <!-- survey content start -->
-<section class="container sample-container">
-    <div id="previousAnswers">
+<section class="container content-wrap">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="survey-heading"><span>Let's help you choose the right package for you.</span> Please go ahead and answer the following question. </h1>
+        </div>
+        <hr />
+        <form class="col-xs-12 wow slideInLeft questions-section">
+            <div id="previousAnswers">
+
+            </div>
+            <span id="questionBudget" class="survey-question survey-option--takiri visible">How much are you willing to spend for an entire website?</span>
+            <br />
+            <div id="slider-container">
+
+                <!-- configuring the slider control with the values to display -->
+                <input id="budgetSlider" type="text"
+                       data-slider-ticks="[1, 2, 3, 4, 5, 6]"
+                       data-slider-ticks-labels='["$0", "$500", "$1000", "$2000","$5000", "$10000+"]'
+                       data-slider-min="1"
+                       data-slider-max="6"
+                       data-slider-step="1"
+                       data-slider-value="1"
+                       data-slider-tooltip="hide" />
+            </div>
+            <div id="survey-options">
+                <!-- The data-after attribute tells the div to appear after the user clicks on the div in the attribute -->
+
+                <span id="questionFor" class="survey-question survey-option--takiri">What is the website for?<br /></span>
+                <a id="questionA" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> My own use</a>
+                <a id="questionB" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> For my Business</a>
+
+                <!-- if they choose business and their budget is $1000, then present a special question -->
+                <!-- The data-only-for-value attribute tells the div to appear if the user had selected the $1000 option -->
+                <span class="survey-question survey-option--takiri" data-after="questionB" data-only-for-value="3">What kind of website do you want?</span>
+                <a id="questionT" data-after="questionB" data-only-for-value="3" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want a simple website with simple elements</a>
+                <a id="questionU" data-after="questionB" data-only-for-value="3" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want a the website to draw attention</a>
+                <!-- end special question -->
+
+                <!-- Survey Questions -->
+                <span class="survey-question survey-option--takiri" data-after="questionA">Can you be more specific?</span>
+                <a id="questionC" data-after="questionA" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> The website is for my hobby</a>
+                <a id="questionD" data-after="questionA" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> The website is for my cv/portfolio</a>
+                <a id="questionE" data-after="questionA" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> The website is for entertainment</a>
+
+                <span class="survey-question survey-option--takiri" data-for-value="3" data-after="questionD">How do you want to benefit from this website the most?</span>
+                <a id="questionF" data-after="questionD" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want to rise above the competition</a>
+                <a id="questionG" data-after="questionD" data-for-value="3" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want to impress future employeers </a>
+                <a id="questionH" data-after="questionD" data-for-value="3" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I simply want to showcase my work</a>
+
+                <span class="survey-question survey-option--takiri" data-after="questionC,questionE,questionH,questionG">What kind of website do you want?</span>
+                <a id="questionI" data-after="questionC,questionE,questionH,questionG" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want a simple website with simple elements</a>
+                <a id="questionJ" data-after="questionC,questionE,questionH,questionG" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want a the website to draw attention</a>
+
+                <span class="survey-question survey-option--takiri" data-after="questionB">How big is your business?</span>
+                <a id="questionK" data-after="questionB" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I have a small business</a>
+                <a id="questionL" data-after="questionB" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I have a large company with many products/services</a>
+
+                <span class="survey-question survey-option--takiri" data-after="questionK">How do you want to benefit from this website the most?</span>
+                <a id="questionM" data-after="questionK" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want to rise above the competition</a>
+                <a id="questionN" data-after="questionK" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want better interaction and communication with my customers </a>
+                <a id="questionO" data-after="questionK" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want to grow my business </a>
+
+                <span class="survey-question survey-option--takiri" data-after="questionL">What use would the website be for your business?</span>
+                <a id="questionP" data-after="questionL" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want our customers to have a great experience when interacting with the website </a>
+                <a id="questionQ" data-after="questionL" class="survey-option survey-option--takiri" href="javascript:void(0)"> <i class="fa fa-dot-circle-o"></i> I want the products/services showcased efficiently.</a>
+
+                <span class="survey-question survey-option--takiri" data-after="questionF,questionM,questionN,questionP,questionQ">What kind of website do you want?</span>
+                <a id="questionR" data-after="questionF,questionM,questionN,questionP,questionQ" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want a minimal, elegant website that shows off all my products</a>
+                <a id="questionS" data-after="questionF,questionM,questionN,questionP,questionQ" class="survey-option survey-option--takiri" href="javascript:void(0)"><i class="fa fa-dot-circle-o"></i> I want a website with complex features that bring to my products to life</a>
+                <!-- End Survey Questions -->
+
+                <!-- The three possibilities - basic, startup and premium -->
+                <div id="basic-option" data-after="questionI,questionT" class="survey-answer">
+                    <span> You're probably looking for our basic package.</span> <button type="button" class="btn btn-primary btn-overlay" onclick="openPreview('/Components/basic.html')"> Here's</button> <span>an example of what we can provide under the basic package</span>
+                </div>
+                <div id="basic-option" data-after="questionJ,questionR,questionO,questionU" class="survey-answer">
+                    <span> You're probably looking for our startup package.</span> <button type="button" class="btn btn-primary btn-overlay" onclick="openPreview('/Components/startup.html')"> Here's</button> <span>an example of what we can provide under the startup package</span>
+                </div>
+                <div id="basic-option" data-after="questionS" class="survey-answer">
+                    <span> You're probably  You're probably looking for our premium package.</span> <button type="button" class="btn btn-primary btn-overlay" onclick="openPreview('/Components/grid/grid.html')"> Here's</button> <span>an example of what we can provide under the premium package</span>
+                </div>
+
+                <!-- Another div to appear whenever the user finishes the survey regardless of the result -->
+                <div id="feature-page-redirect" data-after="questionI,questionT,questionJ,questionR,questionO,questionS,questionU" class="survey-answer">
+                    <span> If you're wondering what else we can do, please visit our </span> <a href="@Url.Action("Features", "Site")" type="button" class="btn btn-primary btn-overlay"> features </a> <span>page</span>
+                </div>
+
+            </div>
+        </form>
     </div>
-    <div id="survey-options">
-        <a  id="questionA" class="survey-option survey-option--takiri" href="#">My own use <span>Where do you want to be?</span></a>
-        @*<div class="checkbox visible" id="questionA">
-            <label>
-                <input type="checkbox"> For my own use
-            </label>
-        </div>*@
-        <div class="checkbox" id="questionC" data-after="questionA" >
-            <label>
-                <input type="checkbox"> The website is for my hobby
-            </label>
-        </div>
-        <div class="checkbox"  id="questionD"  data-after="questionA">
-            <label>
-                <input type="checkbox"> The website is for my cv/portfolio
-            </label>
-        </div>
-        <div class="checkbox"  id="questionE" data-after="questionA">
-            <label>
-                <input type="checkbox"> The website is to advertise your work
-            </label>
-        </div>
-        <div class="checkbox" id="questionH" data-after="questionC,questionE,questionD">
-            <label>
-                <input type="checkbox"> I want a simple website
-            </label>
-        </div>
-        <div class="checkbox"  id="questionI" data-after="questionC,questionE,questionD">
-            <label>
-                <input type="checkbox"> I want a complex website
-            </label>
-        </div>
-
-
-
-        <div class="checkbox visible" id="questionB">
-            <label>
-                <input type="checkbox"> For my Business
-            </label>
-        </div>
-        <div class="checkbox" id="questionF"  data-after="questionB">
-            <label>
-                <input type="checkbox">  I have a small business
-            </label>
-        </div>
-        <div class="checkbox" id="questionG" data-after="questionB">
-            <label>
-                <input type="checkbox"> I have a large company with many products/services
-            </label>
-        </div>
-        <div class="checkbox" id="questionJ" data-after="questionG,questionF">
-            <label>
-                <input type="checkbox"> I want a minimal, elegant website that shows off all my products
-            </label>
-        </div>
-        <div class="checkbox" id="questionK" data-after="questionG,questionF">
-            <label>
-                <input type="checkbox"> I want a website with complex features that bring to my products to life?
-            </label>
-        </div>
-    </div>
-
 </section>
-<!-- survey content wnd -->
+
+<!-- The overlay -->
+<!--20160926 SA theme buttons-->
+<div id="preview-overlay" class="overlay">
+    <div class="container switch-theme" title="Click these buttons to change the theme of this example webpage" data-toggle="tooltip" data-placement="bottom">
+        <div class="row">
+            <div class="col-xs-3 btn-switch-theme" id="switch-dark">
+                <a href="javascript:void(0)">
+                    <span>Dark</span>
+                </a>
+            </div>
+            <div class="col-xs-3 btn-switch-theme" id="switch-light">
+                <a href="javascript:void(0)">
+                    <span>Light</span>
+                </a>
+            </div>
+            <div class="col-xs-3 btn-switch-theme" id="switch-autumn">
+                <a href="javascript:void(0)">
+                    <span>Autumn</span>
+                </a>
+            </div>
+
+            <div class="col-xs-3 btn-switch-theme" id="switch-original">
+                <a href="javascript:void(0)">
+                    <span>Original</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Overlay content -->
+    <div id="preview-container">
+        <a href="javascript:void(0)" class="closebtn" onclick="closePreview()">&times;</a>
+        <div id="preview-iframe-container">
+            <iframe id="preview-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+<div id="preview-overlay-back" class="overlay-back" onclick="closePreview()">
+    <!--  empty background to allow clicking so that the actual overlay can close -->
+</div>
+
+
+<!-- survey content end -->

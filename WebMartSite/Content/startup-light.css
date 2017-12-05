@@ -1,0 +1,63 @@
+﻿body {
+    background-color: #7e8285;
+}
+
+.color {
+    background: #e4e4e4;
+}
+
+.fa.fa-heart {
+    color: #7e8285;
+}
+
+.banner {
+    background: linear-gradient( rgba(123, 83, 97, 0.18), rgba(177, 129, 145, 0.64) ), url(../Images/survey/startup1.jpg);
+    background-size: cover;
+}
+
+.hvr-bounce-to-left {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.content-shade {
+    background: rgba(169, 166, 166, 0.69);
+}
+
+.more {
+    background: linear-gradient( rgba(255, 255, 255, 0.18), rgb(255, 255, 255) );
+}
+
+.shade {
+    background: rgba(126, 130, 133, 0.4);
+}
+
+.navbar-inverse {
+    background-color: #e2e2e2;
+    border-color: #b5b3b3;
+}
+
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+        background-color: #b4b4b4;
+    }
+
+    .navbar-inverse .navbar-brand {
+        font-size: 27px;
+        color: #615f5f;
+    }
+
+    .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+        color: #fff;
+        background-color: #9E9E9E;
+    }
+
+.jumbotron.mid h1 {
+    color: #414141;
+}
+
+.jumbotron.mid p {
+    color: #414141;
+}
+
+.hvr-bounce-to-left:before {
+    background: #a6a6a6;
+}

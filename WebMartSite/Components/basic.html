@@ -1,0 +1,125 @@
+﻿<!-- The demo page for the basic package. Will be displayed in an iframe inside the survey page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!--seo tags-->
+    <title>Basic website Preview | Webmart </title>
+    <meta name="description" content="A very simple example of a website with a basic layout and super-simple elements that fit in perfetly together. Let us make your website for you exaclty how you want it.">
+    <meta charset="utf-8" />
+
+    <!--stylesheets-->
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/basic.css" rel="stylesheet" />
+    <!--20160930 SA different style sheets for themes-->
+    <link id="dark" href="../Content/basic-dark.css" rel="stylesheet" class="themes" disabled />
+    <link id="light" href="../Content/basic-light.css" rel="stylesheet" class="themes" disabled />
+    <link id="autumn" href="../Content/basic-autumn.css" rel="stylesheet" class="themes" disabled />
+
+    <!--js-->
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</head>
+<!--20160907 SA scrollbar class added to make custom scrollbar for overlay-->
+<body class="scrollbar" id="style-1">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!--20160709 SA navbar for mobile-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Your Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="wave">
+                    <div class="banner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="banner-text col-lg-6 col-sm-6 col-xs-12 wow zoomIn" data-wow-delay=".5s">
+                                    <div class="jumbotron">
+                                        <h1>Your website</h1>
+                                        <p>Subtext that you can add</p>
+                                    </div>
+                                </div>
+                                <div class="clearfix visible-xs-block hidden-sm-block"></div>
+                                <!--20160709 SA small image with wave that goes on the banner-->
+                                <div class="banner-img col-lg-4 col-lg-offset-1 col-sm-6 col-xs-12 wave wow fadeInRight center-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--20160907 SA section for thumbs on basic example page-->
+    <section class="container-fluid bg-3 text-center">
+        <div class="row thumb">
+            <div class="col-sm-3">
+                <img src="../Images/survey/b1.png" class="img-responsive img-rounded" style="width:100%" alt="Envelope Icon">
+                <p>Lorem</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../Images/survey/b4.png" class="img-responsive img-rounded" style="width:100%" alt="Coffee cup">
+                <p>Ipsum</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../Images/survey/b3.png" class="img-responsive img-rounded" style="width:100%" alt="Heart Icon">
+                <p>Dolor</p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../Images/survey/b2.png" class="img-responsive img-rounded" style="width:100%" alt="House icon">
+                <p>Amet</p>
+            </div>
+        </div>
+    </section><br>
+
+    <!--20160925 SA forcing a scroll bar handle-->
+    <div class="force-overflow"></div>
+
+
+    <!--//script-->
+    <!--20160928 SA method to change theme which is called from common scripts-->
+    <script>
+        $(document).ready(function () {
+            var links = document.getElementsByTagName('link');
+            for (var i = 0; i < links.length; i++) {
+                var a = links[i];
+                if (a.rel.indexOf('style') != -1 && a.id) {
+                    a.disabled = true;
+                  
+                }
+            }
+        });
+       
+        function switchStyle(sty) {
+            var links = document.getElementsByTagName('link');
+            for (var i = 0; i < links.length; i++) {
+                var a = links[i];
+                if (a.rel.indexOf('style') != -1 && a.id) {
+                    a.disabled = true;
+                    if (a.id == sty) {
+                        a.disabled = false;
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

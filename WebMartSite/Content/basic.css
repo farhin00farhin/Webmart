@@ -1,0 +1,149 @@
+﻿
+/*The MIT License (MIT)
+Copyright (c) 2016 Sadia Afrin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+
+/*Different blocks of code has been retrieved from code pen and w3 schools*/
+
+body {
+    transition: all 2s ease;
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-weight: bold;
+    color: #ad8549;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+    .jumbotron h1 {
+        font-weight: bold;
+        transition: color 5s ease;
+        color: white;
+    }
+
+        .jumbotron h1:hover {
+            color: #ad8549;
+        }
+
+.navbar-inverse .navbar-brand {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.wave {
+    background-color: #0af2cf;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+    .wave::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 20px 20px;
+        background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+    }
+
+.small-wave::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.banner {
+    text-align: center;
+    width: 100%;
+}
+
+.banner-img {
+    width: 265px;
+    background-size: 100% auto;
+    background-image: url(../Images/survey/basic1.jpg);
+    background-repeat: no-repeat;
+    height: 297px;
+    margin-top: 166px;
+    border-radius: 10px;
+}
+
+.banner-text {
+    padding-top: 105px;
+}
+
+.thumb {
+    margin-top: 30px;
+}
+
+    .thumb p {
+        font-weight: bold;
+        margin: 0 0 10px;
+        font-size: 20px;
+        color: #a6783d;
+    }
+
+
+.scrollbar {
+    overflow-y: scroll;
+}
+
+.force-overflow {
+    min-height: 450px;
+    position: absolute;
+}
+
+
+#style-1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar {
+    border-radius: 6px;
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+
+
+@media(max-width:991px) {
+    .banner-img {
+        margin-top: 177px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner-img {
+        margin: auto;
+        float: inherit;
+    }
+}

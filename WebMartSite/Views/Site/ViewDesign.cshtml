@@ -1,0 +1,75 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("_MetaTagsPartial")
+
+    <!--stylesheets-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/spectrum.css" rel="stylesheet" />
+    <link href="~/Content/hover-min.css" rel="stylesheet" media="all">
+    <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Content/CYO.css" rel="stylesheet" />
+    <link href="~/Content/jquery.contextMenu.min.css" rel="stylesheet" />
+
+    <!--js-->
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/Scripts/spectrum.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+    <script src="~/Scripts/jquery.contextMenu.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<!--20161007 SA page that lets you view custom designs from the database-->
+<body onload="InitThis();">
+    <nav class="navbar navbar-inverse CYO">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="@Url.Action("Index", "Site")" class="navbar-brand">Webmart</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid no-padding">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="design-area"></div>
+                <div class="canvas-container">
+                    <canvas id="myCanvas" height="4000" width="4000"></canvas>
+                </div>
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var decoded = $("<textarea/>").html('@ViewBag.LoadedDesign').text();
+        decoded = $("<textarea/>").html(decoded).text();
+        if (decoded.match("^data:image")) {
+            //20161007 SA loading design to canvas
+            var myCanvas = document.getElementById('myCanvas');
+            var ctx = myCanvas.getContext('2d');
+            var img = new Image;
+            img.onload = function () {
+                ctx.drawImage(img, 0, 0);
+            };
+            img.src = decoded;
+            $(".design-area").css("display", "none");
+            $(".canvas-container").css("display", "block");
+        }
+        else {
+            //20161007 SA loading design to design area
+            $(".design-area").html(decoded);
+        }
+
+    </script>
+
+</body>
+</html>

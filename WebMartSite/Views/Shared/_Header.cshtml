@@ -1,15 +1,15 @@
 ﻿<!-- The header segment. This is being used throughout all the pages. -->
 <header>
-    <!-- bannner-slider -->
-    <section id="slider" class="content">
+    <!-- bannner-slider - using divs for layout-->
+    <div id="slider" class="banner-content">
         <ul class="slider-wrapper">
             <li class="current-slide">
                 <img src="/images/banner.jpg" alt="Computer equipment arranged in a table">
             </li>
         </ul>
-    </section>
-    <!-- bannner -->
-    <section class="banner">
+    </div>
+    <!-- bannner - using divs for layout -->
+    <div class="banner">
         <div class="container">
             <div class="logo wow fadeInDown" data-wow-duration="1s">
                 <a href="/">Webmart <span class="wow bounceInRight" data-wow-delay=".5s"> Elegant, modern and personalized </span></a>
@@ -27,14 +27,15 @@
                     </div>
 
                     <!-- Nav -->
-                    <section class="center-container collapse navbar-collapse nav-wil">
+                    <!--20161005 SA nav items with SVG tags for animation-->
+                    <div class="center-container collapse navbar-collapse nav-wil">
                         <nav class="main-nav ">
                             <ul class="nav navbar-nav ">
 
                                 <li class="menu-effect">
-                                    <a href="@Url.Action("Index", "Site")" class="active">
-                                        <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
-                                            <rect class="shape" height="60" width="150" />
+                                    <a href="@Url.Action("Index", "Site")" class="@ViewBag.homeMenuActiveClass nav-menu">
+                                        <svg height="60" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="60" width="1em" />
                                             <text y="34">
                                                 <tspan class="text" x="50%" text-anchor="middle">Home</tspan>
                                             </text>
@@ -43,9 +44,9 @@
                                 </li>
 
                                 <li class="menu-effect">
-                                    <a href="@Url.Action("Features", "Site")">
-                                        <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
-                                            <rect class="shape" height="60" width="150" />
+                                    <a class="@ViewBag.featuresMenuActiveClass nav-menu" href="@Url.Action("Features", "Site")">
+                                        <svg height="60" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="60" width="1em" />
                                             <text y="34">
                                                 <tspan class="text" x="50%" text-anchor="middle">Features</tspan>
                                             </text>
@@ -53,9 +54,9 @@
                                     </a>
                                 </li>
                                 <li class="menu-effect">
-                                    <a href="@Url.Action("Pricing", "Site")">
-                                        <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
-                                            <rect class="shape" height="60" width="150" />
+                                    <a href="@Url.Action("Pricing", "Site")" class="@ViewBag.pricingMenuActiveClass nav-menu">
+                                        <svg height="60" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="60" width="1em" />
                                             <text y="34">
                                                 <tspan class="text" x="50%" text-anchor="middle">Pricing</tspan>
                                             </text>
@@ -63,9 +64,9 @@
                                     </a>
                                 </li>
                                 <li class="menu-effect">
-                                    <a href="@Url.Action("About", "Site")">
-                                        <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
-                                            <rect class="shape" height="60" width="150" />
+                                    <a href="@Url.Action("About", "Site")" class="@ViewBag.aboutMenuActiveClass nav-menu">
+                                        <svg height="60" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="60" width="1em" />
                                             <text y="34">
                                                 <tspan class="text" x="50%" text-anchor="middle">About Us</tspan>
                                             </text>
@@ -73,9 +74,9 @@
                                     </a>
                                 </li>
                                 <li class="menu-effect">
-                                    <a href="@Url.Action("Contact", "Site")">
-                                        <svg height="60" width="150" xmlns="http://www.w3.org/2000/svg">
-                                            <rect class="shape" height="60" width="150" />
+                                    <a href="@Url.Action("Contact", "Site")" class="@ViewBag.contactMenuActiveClass nav-menu">
+                                        <svg height="60" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="shape" height="60" width="1em" />
                                             <text y="34">
                                                 <tspan class="text" x="50%" text-anchor="middle">Contact</tspan>
                                             </text>
@@ -84,14 +85,12 @@
                                 </li>
                             </ul>
                         </nav>
-                    </section>
+                    </div>
 
                 </nav>
             </div>
 
         </div>
-
-    </section>
-
+    </div>
 </header>
-<!-- End of footer segment. -->
+<!-- End of header segment. -->

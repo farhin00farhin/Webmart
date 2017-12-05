@@ -1,0 +1,15 @@
+﻿body {
+      background-color: #663646;
+}
+
+.wave {
+   background-color: #FFC107;
+}
+
+ .wave::before {
+        background-image: radial-gradient(circle at 10px -5px, transparent 12px, #663646 13px);
+    }
+
+.navbar-inverse .navbar-brand {
+    color: #ffc107;
+}

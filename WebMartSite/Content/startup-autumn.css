@@ -1,0 +1,46 @@
+﻿body {
+    background-color: #FF9800;
+}
+
+.color {
+    background: rgba(154, 126, 85, 0.51);
+}
+
+.fa.fa-heart {
+    color: #965900;
+}
+
+.banner {
+    background: linear-gradient( rgba(246, 144, 31, 0.63), rgba(0, 0, 0, 0.68) ), url(../Images/survey/startup1.jpg);
+    background-size: cover;
+}
+
+.hvr-bounce-to-left {
+    background: #FFC107;
+    border: 1px solid #30281c;
+}
+
+.content-shade {
+    background: rgba(255, 152, 0, 0.52);
+}
+
+.hvr-bounce-to-left:before {
+    background: #797979;
+}
+
+.more {
+    background: linear-gradient( rgb(255, 207, 126), #F6901F );
+}
+
+.navbar-inverse {
+    background-color: #fdba4a;
+    border-color: #FFC107;
+}
+
+    .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+        background-color: rgba(145, 158, 47, 0.59);
+    }
+
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+        background-color: rgba(189, 169, 57, 0.91);
+    }
